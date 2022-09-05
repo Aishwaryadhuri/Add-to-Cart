@@ -10,8 +10,8 @@
                             <th>Product Image</th>
                             <th>Description</th>
                             <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Total</th>
+                            <th >Quantity</th>
+                            <th >Total</th>
  
                             <th >Action</th>
                         </tr>
@@ -27,7 +27,6 @@
                             <td class="textSize" style="width: 10%;">{{item.quantity}}&nbsp;<button class="addQantity" (click)="productQuantity('increase',item)">+</button>&nbsp;<button class="SubQantity" (click)="productQuantity('decrease',item)">-</button></td>
                             <td class="textSize" style="width: 10%;">{{item.total}}</td>
                             <td>
-                               
                                 <button (click)="removeItem(item)" class="btn btn-danger" > <i class="fas fa-trash-alt"></i></button>
                             
                             </td>
