@@ -10,8 +10,9 @@
     border: none;
     outline: none;
     height: 162px;
-    width: 250px;
+    width: 200px;
     margin: 20px 0px;
+    margin-top: 50px;
 }
 h4,
 h6 {
@@ -23,6 +24,9 @@ h6 {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+.card-title{
+    margin-bottom: 10px;
 }
 .card-table {
     position: relative;
@@ -40,8 +44,10 @@ h6 {
     font-size: 14px !important;
     margin-top: 20px !important;
     font-weight: 400;
-    padding: 12px 72px;
     border-radius: 3px !important;
+   margin: auto;
+
+
 }
 .btn{
     margin-left: 2px;
