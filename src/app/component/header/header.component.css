@@ -1,0 +1,12 @@
+.form-control {
+  border-radius: 3px;
+  width: 600px;
+  margin-left: 20px;
+}
+
+@media (max-width: 375px) {
+  .navbar {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=header.component.css.map */
