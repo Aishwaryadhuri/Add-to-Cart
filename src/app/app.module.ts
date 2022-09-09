@@ -10,25 +10,36 @@ import { HttpClientModule } from '@angular/common/http';
 // import { FilterPipe } from './shared/filter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SingleProductComponent } from './single-product/single-product.component';
+import { RouterModule } from '@angular/router';
+import { LoginComponent } from './component/login/login.component';
+import { NotFoundComponent } from './component/not-found/not-found.component';
+import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
+
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    CartComponent,
-    ProductsComponent,
-    SingleProductComponent,
-    // FilterPipe
-  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
- 
+    RouterModule,
+
+  ],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    CartComponent,
+    ProductsComponent,
+    SingleProductComponent,
+    LoginComponent,
+    NotFoundComponent,
+    ForgotPasswordComponent,
+   
+    // FilterPipe
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  
 })
 export class AppModule { }

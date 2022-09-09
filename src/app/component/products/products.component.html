@@ -1,3 +1,4 @@
+
 <div class="card-top container-fluid">
     <!-- <div class="container d-flex">
         <div class="item">
@@ -37,7 +38,7 @@
         <ng-container *ngFor="let item of productList" >
         
             <div class="card col-md-2">
-                <img src="{{item.image}}" alt="" [routerLink]="['/singleproduct', item.id]" >
+                <img src="{{item.image}}" alt="" routerLink="['/singleproduct', item.id]" >
                 <h5 class="card-title" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
                 <p class="card-text" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;" >{{item.description}}</p>
                 <p><strong>Price:</strong> ${{item.price}}</p>
@@ -52,4 +53,3 @@
 
     </div>
 </div>
-<router-outlet></router-outlet>

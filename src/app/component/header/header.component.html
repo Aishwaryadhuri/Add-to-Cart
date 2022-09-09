@@ -7,9 +7,13 @@
             </i>
             <strong style="font-size: 20px; color: aliceblue;">MyStore</strong>
         </div>
-        <button routerLink="cart" class="btn btn-primary">
-            <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
-            <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
-        </button>
+        <ng-container *ngIf="this.show">
+        <button  type="button" class="btn btn-warning"(click)="logout()"> logout</button> 
+    </ng-container>
+    <button routerLink="cart" class="btn btn-primary">
+        <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+        <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+    </button>
+        
     </div>
 </header>
